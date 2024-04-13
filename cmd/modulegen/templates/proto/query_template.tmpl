@@ -1,0 +1,19 @@
+syntax = "proto3";
+package testchain.{{.ModuleName}};
+
+import "gogoproto/gogo.proto";
+import "google/api/annotations.proto";
+import "testchain/{{.ModuleName}}/genesis.proto";
+import "testchain/{{.ModuleName}}/tx.proto";
+
+option go_package = "{{.ModulePath}}/types";
+
+service Query {
+  rpc Params(ParamsRequest) returns (ParamsResponse) {
+    option (google.api.http).get = "/testchain/{{.ModuleName}}/Params";
+  }
+}
+
+//=============================== Params
+message ParamsRequest {}
+message ParamsResponse { Params params = 1 [ (gogoproto.nullable) = false ]; }
