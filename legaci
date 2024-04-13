@@ -1,0 +1,39 @@
+// package main
+
+// import (
+// 	"fmt"
+
+// 	"github.com/cosmos/cosmos-sdk/codec"
+// )
+
+// // Define a struct
+// type ExampleStruct struct {
+// 	ID   int    `json:"id"`
+// 	Name string `json:"name"`
+// }
+
+// func main() {
+// 	// Initialize a new LegacyAmino codec
+// 	cdc := codec.NewLegacyAmino()
+
+// 	// Register the struct
+// 	cdc.RegisterConcrete(&ExampleStruct{}, "example/ExampleStruct", nil)
+
+// 	// Create an instance of the struct
+// 	example := &ExampleStruct{ID: 1, Name: "Cosmos"}
+
+// 	// Marshal the struct to bytes using Amino
+// 	marshalled, err := cdc.Amino.MarshalBinaryBare(example)
+// 	if err != nil {
+// 		panic(err)
+// 	}
+// 	fmt.Printf("Marshalled: %x\n", marshalled)
+
+//		// Unmarshal the bytes back to the struct using Amino
+//		var unmarshalled ExampleStruct
+//		err = cdc.Amino.UnmarshalBinaryBare(marshalled, &unmarshalled)
+//		if err != nil {
+//			panic(err)
+//		}
+//		fmt.Printf("Unmarshalled: %+v\n", unmarshalled)
+//	}

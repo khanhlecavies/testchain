@@ -13,7 +13,7 @@ for dir in $proto_dirs; do
   done
 done
 
-cd ..
-# move proto files to the right places
+# cd ..
+# # move proto files to the right places
 # cp -r github.com/Cosmos-SDK-Learning-101/testchain/* ./
 # rm -rf github.com

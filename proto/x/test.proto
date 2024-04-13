@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package test;
+
+option go_package = "x";
+
+// ExampleStruct is an example structure for demonstration purposes.
+message ExampleStruct {
+  int32 id = 1;
+  string name = 2;
+}

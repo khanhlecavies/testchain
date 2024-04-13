@@ -114,3 +114,6 @@ proto-format: ## Formats protobuf files
 	@echo "Formatting Protobuf files"
 	@$(DOCKER) run --rm -v $(CURDIR):/workspace --workdir /workspace tendermintdev/docker-build-proto \
 		find ./proto -name "*.proto" -exec clang-format -i {} \;
+
+generate:
+  protoc --go_out=. --go_opt=paths=source_relative example.proto

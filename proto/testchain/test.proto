@@ -1,5 +1,0 @@
-
-
-message Test {
-    string name = 1;
-}
