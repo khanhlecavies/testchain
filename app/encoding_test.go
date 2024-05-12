@@ -4,7 +4,7 @@ import (
 	fmt "fmt"
 	"testing"
 
-	test "github.com/Cosmos-SDK-Learning-101/testchain/x"
+	test "github.com/Cosmos-SDK-Learning-101/testchain/x/testchain"
 	"github.com/cosmos/cosmos-sdk/codec"
 	types "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/stretchr/testify/require"

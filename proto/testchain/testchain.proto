@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package test;
+package testchain;
 
-option go_package = "x";
+option go_package = "testchain";
 
 // ExampleStruct is an example structure for demonstration purposes.
 message ExampleStruct {
